@@ -16,5 +16,7 @@ This project allows you to convert any mp4 video to ascii video and play it in t
 2. Rename your target video file to `video.mp4`
 3. Proceed to `res/video.mp4` and replace existing file with your target video
 4. Execute [runner.bat](runner.bat) or [runner.sh](runner.sh) on Windows or Linux machine respectively
-5. (Optional) If the result video looks weird you can modify symbols in `ascii_chars` variable in [script.py](script.py) to create a different look
-6. (Optional) If an error `_curses.error: addwstr() returned ERR` occures then adjust `ascii_width` and `ascii_height` variables in [script.py](script.py) and the window size in your `runner` file
+5. (Optional) Change the playback mode from preprocessing to realtime if needed in [script.py](script.py)
+6. (Optional) If the result video looks weird you can modify symbols in `ascii_chars` variable in [script.py](script.py) to create a different look
+7. (Optional) If an error `_curses.error: addwstr() returned ERR` occurs then adjust `ascii_width` and `ascii_height` variables in [script.py](script.py) and the window size in your `runner` file
+8. (Optional) Use `save_ascii_frames_to_file` function to save your generated frames to a text file
